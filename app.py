@@ -42,8 +42,11 @@ def initial_load():
     finish_button.place(height=conf.button_height, width=conf.button_width, relx=0.35, rely=0.4)
 
 
+# Hiding Widgets and display only name
 def display_name():
     name = name_entry.get()
+    
+    # To remove widgets from the frame
     name_entry.place_forget()
     finish_button.place_forget()
 
